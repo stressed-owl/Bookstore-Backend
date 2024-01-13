@@ -22,5 +22,30 @@ export class Book {
   @Column({
     type: 'float',
   })
+  rating: number;
+
+  @Column({
+    type: 'boolean',
+  })
+  isNew: boolean;
+
+  @Column({
+    type: 'boolean',
+  })
+  isBestseller: boolean;
+
+  @Column({
+    type: 'boolean',
+  })
+  isBestPrice: boolean;
+
+  @Column({
+    type: 'boolean',
+  })
+  isBookWithAutograph: boolean;
+
+  @Column({
+    type: 'float',
+  })
   price: number;
 }

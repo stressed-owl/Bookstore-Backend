@@ -6,7 +6,7 @@ import { Book } from './book.entity/book.entity';
 @Injectable()
 export class BooksService {
   constructor(
-    @InjectRepository(Book) private booksRepository: Repository<Book>,
+    @InjectRepository(Book) private readonly booksRepository: Repository<Book>,
   ) {}
 
   getBooks(): Promise<Book[]> {
