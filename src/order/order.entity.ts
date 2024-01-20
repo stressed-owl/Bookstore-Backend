@@ -27,4 +27,7 @@ export class BookOrder {
 
   @Column()
   orderID: number;
+
+  @Column()
+  coupon?: string;
 }
