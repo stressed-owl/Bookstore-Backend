@@ -7,4 +7,9 @@ export class Coupon {
 
   @Column()
   coupon: string;
+
+  @Column({
+    default: 0,
+  })
+  off: number;
 }

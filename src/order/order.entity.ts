@@ -30,4 +30,7 @@ export class BookOrder {
 
   @Column()
   coupon?: string;
+
+  @Column()
+  totalPrice: string;
 }
